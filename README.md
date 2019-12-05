@@ -1,6 +1,6 @@
 # vim-protolint
 
-This provides Vim integration for protolint via the ALE engine.
+This provides Vim integration for protolint linting and fixing via the ALE engine.
 
 ## Installation
 

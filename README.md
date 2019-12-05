@@ -5,6 +5,7 @@ This provides Vim integration for protolint via the ALE engine.
 ## Installation
 
 [protolint](https://github.com/yoheimuta/protolint) must be installed.
+Note that the binary with **v0.22.0 or above** is supported
 
 ### Installation with Vim package management
 

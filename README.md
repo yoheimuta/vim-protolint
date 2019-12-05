@@ -14,6 +14,7 @@ other tools. Simply clone the plugin into your pack directory.
 
 ```
 mkdir -p ~/.vim/pack/git-plugins/start
+# NOTE: Install ale if you haven't installed yet.
 git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/git-plugins/start/ale
 git clone --depth 1 https://github.com/yoheimuta/vim-protolint.git ~/.vim/pack/git-plugins/start/vim-protolint
 ```

@@ -21,7 +21,7 @@ git clone --depth 1 https://github.com/yoheimuta/vim-protolint.git ~/.vim/pack/g
 
 ## Demo
 
-<img src="doc/demo.gif" alt="demo" width="300"/>
+<img src="doc/demo.gif" alt="demo" width="600"/>
 
 ## Usage
 

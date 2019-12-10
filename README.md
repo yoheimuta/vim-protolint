@@ -1,10 +1,11 @@
 # vim-protolint
 
-This provides Vim integration for protolint via the ALE engine.
+This provides Vim integration for protolint linting and fixing via the ALE engine.
 
 ## Installation
 
 [protolint](https://github.com/yoheimuta/protolint) must be installed.
+Note that the binary with **v0.22.0 or above** is supported
 
 ### Installation with Vim package management
 
@@ -13,6 +14,7 @@ other tools. Simply clone the plugin into your pack directory.
 
 ```
 mkdir -p ~/.vim/pack/git-plugins/start
+# NOTE: Install ale if you haven't installed yet.
 git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/git-plugins/start/ale
 git clone --depth 1 https://github.com/yoheimuta/vim-protolint.git ~/.vim/pack/git-plugins/start/vim-protolint
 ```

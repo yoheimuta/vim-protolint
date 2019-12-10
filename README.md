@@ -17,6 +17,10 @@ git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/git-pl
 git clone --depth 1 https://github.com/yoheimuta/vim-protolint.git ~/.vim/pack/git-plugins/start/vim-protolint
 ```
 
+## Demo
+
+<img src="doc/demo.gif" alt="demo" width="300"/>
+
 ## Usage
 
 Add the following to your .vimrc.

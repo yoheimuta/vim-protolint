@@ -1,6 +1,8 @@
 # vim-protolint
 
-This provides Vim integration for protolint linting and fixing via the ALE engine.
+This provides Vim integration for protolint linting and fixing via the [ALE engine](https://github.com/dense-analysis/ale).
+
+It also enables you to check errors with [Syntastic](https://github.com/vim-syntastic/syntastic).
 
 ## Installation
 
@@ -14,9 +16,11 @@ other tools. Simply clone the plugin into your pack directory.
 
 ```
 mkdir -p ~/.vim/pack/git-plugins/start
-# NOTE: Install ale if you haven't installed yet.
-git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/git-plugins/start/ale
 git clone --depth 1 https://github.com/yoheimuta/vim-protolint.git ~/.vim/pack/git-plugins/start/vim-protolint
+
+# NOTE: Install either ale or syntastic if you haven't installed yet.
+git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/git-plugins/start/ale
+git clone --depth 1 https://github.com/vim-syntastic/syntastic.git ~/.vim/pack/git-plugins/start/syntastic
 ```
 
 ## Demo
@@ -24,6 +28,8 @@ git clone --depth 1 https://github.com/yoheimuta/vim-protolint.git ~/.vim/pack/g
 <img src="doc/demo.gif" alt="demo" width="600"/>
 
 ## Usage
+
+### Error checking with ALE
 
 Add the following to your .vimrc.
 
@@ -39,7 +45,7 @@ let g:ale_fixers = {
 " We recommend you set this.
 let g:ale_lint_on_text_changed = 'never'
 
-" You can remove comments below if you want to configure parameters.
+" You can remove comment outs below if you want to configure parameters.
 " let g:ale_proto_protolint_executable = "/usr/local/bin/protolint"
 " let g:ale_proto_protolint_config =
 "            \ "/path/to/config/.protolint.yaml"
@@ -47,3 +53,16 @@ let g:ale_lint_on_text_changed = 'never'
 ```
 
 See [doc/ale-proto.txt](doc/ale-proto.txt) in more detail.
+
+### Error checking with Syntastic
+
+Add the following to your .vimrc.
+
+```vim
+let g:syntastic_proto_checkers = ['protolint']
+
+" You can remove comment outs below if you want to configure parameters.
+" let g:syntastic_proto_protolint_exec = "/usr/local/bin/protolint"
+" let g:syntastic_proto_protolint_args =
+"            \ "-config_path= /path/to/config/.protolint.yaml"
+```
